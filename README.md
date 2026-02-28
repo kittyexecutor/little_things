@@ -15,8 +15,8 @@ A simple CLI utility for quick Linux system inspection.
 Designed for DevOps, SREs, and system engineers to collect essential host information for troubleshooting, audits, or incident response.
 
 The script prints results to the terminal and saves a report file:
-
 recon_<hostname>_<date>.txt
+
 Features
 
 Always included
