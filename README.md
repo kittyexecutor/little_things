@@ -1,13 +1,13 @@
 ## Scripts
 
-### concatenation_and_unique.py
+### 1. concatenation_and_unique.py
 
 Merges three text files, removes duplicate lines, sorts the result, and writes it to an output file.
 
 Default file paths are defined in lines 3–6.  
 You can modify them if needed.
 
-### recon.sh
+### 2. recon.sh
 
 Collecting data and save report to file regards main servers information for system which hosts software based on Docker.
 
