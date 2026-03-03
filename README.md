@@ -45,3 +45,16 @@ chmod +x recon.sh
 ./recon.sh --full
 
 Lightweight, dependency-free, and useful for quick system diagnostics.
+
+### 3. dockerout.sh
+
+A small but powerful tool that helps L1 engineers quickly download a Docker image and export it as a compressed tar archive for sharing with clients or other teams.
+Use `--help` to see usage instructions.
+Make sure to provide the arguments in the correct order:
+`<app> <version> <registry>`
+
+Arguments:
+  app        Image name (e.g. nginx)
+  version    Image tag (e.g. 1.25)
+  registry   Registry/repository prefix (e.g. docker.io/library)
+  
