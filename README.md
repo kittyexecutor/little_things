@@ -66,14 +66,14 @@ It automates multiple reconnaissance techniques and merges the results into a si
 You are free to use this script for bug bounty programs or penetration testing, but do not use it for illegal activities.
 
 The script accepts two parameters:
-"./subdomain-recon.sh <domain.com> <output_directory>"
+`./subdomain-recon.sh <domain.com> <output_directory>`
 Example:
-"./subdomain-recon.sh example.com /home/username/Documents/example-com"
+`./subdomain-recon.sh example.com /home/username/Documents/example-com`
 The first parameter is the target domain, and the second parameter is the directory where the results will be saved.
 
 Requirements:
 1. Your operating system must have the following utilities installed:
-   assetfinder
+`   assetfinder
    gobuster
    httpx
    curl
@@ -82,8 +82,8 @@ Requirements:
    awk
    sort
    cat
-   mv
+   mv`
 
 2. The script expects the following wordlist to exist:
-/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+`/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
 If this file is stored in a different location on your system, edit the path manually in the script (around line 29).
