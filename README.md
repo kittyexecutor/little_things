@@ -9,7 +9,7 @@ You can modify them if needed.
 
 ### 2. recon.sh
 
-Collecting data and save report to file regards main servers information for system which hosts software based on Docker.
+Collecti7ng data and save report to file regards main servers information for system which hosts software based on Docker.
 
 A simple CLI utility for quick Linux system inspection.
 Designed for DevOps, SREs, and system engineers to collect essential host information for troubleshooting, audits, or incident response.
@@ -58,3 +58,32 @@ Arguments:
   version    Image tag (e.g. 1.25)
   registry   Registry/repository prefix (e.g. docker.io/library)
   
+### 4. subdomine-recon.sh
+
+This script combines several utilities (crt.sh, assetfinder, Gobuster, httpx) to quickly collect subdomains for a bug bounty or penetration-testing target.
+It automates multiple reconnaissance techniques and merges the results into a single list of discovered subdomains. The script then checks which domains are live and filters out inactive hosts.
+
+You are free to use this script for bug bounty programs or penetration testing, but do not use it for illegal activities.
+
+The script accepts two parameters:
+"./subdomain-recon.sh <domain.com> <output_directory>"
+Example:
+"./subdomain-recon.sh example.com /home/username/Documents/example-com"
+The first parameter is the target domain, and the second parameter is the directory where the results will be saved.
+
+Requirements:
+1. Your operating system must have the following utilities installed:
+   assetfinder
+   gobuster
+   httpx
+   curl
+   jq
+   sed
+   awk
+   sort
+   cat
+   mv
+
+2. The script expects the following wordlist to exist:
+/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+If this file is stored in a different location on your system, edit the path manually in the script (around line 29).
