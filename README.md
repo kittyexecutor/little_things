@@ -87,3 +87,24 @@ Requirements:
 2. The script expects the following wordlist to exist:
 `/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
 If this file is stored in a different location on your system, edit the path manually in the script (around line 29).
+
+### 5. sort by code.py
+
+A simple Python script that parses a text file with HTTP logs, extracts https:// URLs, and groups them by HTTP status codes into separate files.
+
+Features
+Reads input file line by line
+Detects HTTP status codes at the beginning of each line (e.g. 200, 404, 500)
+Extracts URLs starting with https://
+Automatically creates output files like:
+200.txt
+404.txt
+500.txt
+Appends results (does not overwrite existing files)
+Requirements
+Python 3.x
+No external dependencies (uses standard library only)
+Usage
+python script.py --path input.txt
+or
+python script.py -p input.txt
